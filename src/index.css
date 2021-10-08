@@ -1,0 +1,80 @@
+body {
+	  margin: 0;
+	font-family: 'Raleway', sans-serif;
+/*   background: #73a857; */
+/*   background: #2c3e50; */
+/*   background: #77b1a9; */
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+/*   transition-delay: 1s; */
+}
+body, div{
+/* transition: background 1s, color 1s; */
+	transition-delay: .3s;
+	transition-property: background color;
+	transition-timing-function: ease-in-out;
+	transition-duration: 1s;
+
+}
+
+.card{
+/* 	color: white; */
+	padding:2em;
+	background: white;;
+	border: 2px solid white;
+	min-width:300px;
+	width: 42vw;
+	min-height: 32vh;
+	border-radius: 5px;
+}
+/* .card >* { */
+/* 	border: 1px dotted green; */
+/* } */
+#text {
+	margin-bottom: 3em;
+	display:flex;
+	flex-flow:column;
+/* 	background:green; */
+	align-items: flex-end;
+
+}
+#text h1 {
+	margin: 0 1em;
+	margin-bottom:1em;
+	text-align: center;
+}
+
+
+.autorius {
+	color: white;
+	text-align: center;
+}
+
+.SocMyg {
+	display:flex;
+	align-content: space-between;
+/* 	border: 1px dotted orange; */
+}
+.SocMyg >*{
+	display:flex;
+}
+.myg {
+	padding: 10px ;
+	border-radius: 3px;
+	border: 1px solid black;
+	cursor: pointer;
+	display: block;
+	text-decoration: none;
+	color: white;
+	margin-right: 4px;
+}
+.mygalas {
+	margin-left: auto;
+}
+#spanas {
+	font-size: 1.2em;
+
+}
+
