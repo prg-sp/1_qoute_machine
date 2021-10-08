@@ -6,6 +6,7 @@ it will be here soon
 # jo ziurim kas cia bus
 -jo jo jo , va cia tai tai idoumu, commita kai darai tai subject  rasai ir body rasai
   reikia tik "$git commit" parasyti ir viskas
+- bet gal ir ir ne per editoriu galima?
 
 ## Licence:
 -  learniing everything from freecodecamp react course
