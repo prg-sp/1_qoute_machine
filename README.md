@@ -3,6 +3,7 @@
 
 # need a printscreen for sure
 it will be here soon
+# jo ziurim kas cia bus
 
 ## Licence:
 -  learniing everything from freecodecamp react course
