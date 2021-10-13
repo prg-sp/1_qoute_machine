@@ -1,11 +1,5 @@
-
-const MiniAutorius  = ({auto}) => {
-	return (
-		<div id="author"> 
-    -{" "}{auto}
-		</div>
-
-		)
+const MiniAutorius = ({ auto }) => {
+	return <div id="author">- {auto}</div>
 }
 
-export default MiniAutorius;
+export default MiniAutorius
