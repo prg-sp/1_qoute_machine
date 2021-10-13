@@ -5,7 +5,7 @@ const App   = () => {
 	return (
 		<div >
 			<Kortele cssClass='card'/>
-			<Autorius cssClass="autorius" />
+				<Autorius cssClass="autorius" />
 					</div>
 	)
 }
