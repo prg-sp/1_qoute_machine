@@ -1,9 +1,10 @@
 
 const MiniAutorius  = ({auto}) => {
 	return (
-		<div id="author">
-			 -{" "}{auto}
+		<div id="author"> 
+    -{" "}{auto}
 		</div>
+
 		)
 }
 

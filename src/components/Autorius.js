@@ -1,9 +1,9 @@
 const Autorius  = ({cssClass}) => {
 	return (
 		<div className={cssClass}>
-			<p>by hezag</p>
+			<p>mr baer</p>
 		</div>
 		)
 }
 
-export default Autorius;
+export default Autorius

@@ -9,7 +9,7 @@ const Komentaras  = ({cita, auto}) => {
 		<div id="text">
 			<h1><span id='spanas'>{eleme}</span>{" "}{cita}</h1>
 			<MiniAutorius  auto={auto}/>
-		</div>
+    </div>
 		)
 }
 
