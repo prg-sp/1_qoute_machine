@@ -1,50 +1,51 @@
 body {
 	margin: 0;
 	font-family: 'Raleway', sans-serif;
-	/*   background: #73a857; */
-	/*   background: #2c3e50; */
-	/*   background: #77b1a9; */
 	display: flex;
 	justify-content: center;
-
 	align-items: center;
 	height: 100vh;
-	/*   transition-delay: 1s; */
-}
 
-body,
-div {
-	/* transition: background 1s, color 1s; */
+	/* cia su sass galetu buti funkcija transiciojos*/
+	transition: background 1s, color 1s;
 	transition-delay: 0.3s;
 	transition-property: background color;
 	transition-timing-function: ease-in-out;
 	transition-duration: 1s;
 }
 
+/* korteles konteineris su tekstu mygtuku ir socialiniais tinklais*/
 .card {
-	/* 	color: white; */
-	padding: 2em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 3em;
 	background: white;
-	border: 2px solid goldenrod;
+	/* 	border: 2px solid white; */
 	min-width: 300px;
+	max-width: 500px;
 	width: 42vw;
-	min-height: 32vh;
-	border-radius: 5px;
+	border-radius: 3px;
+	/* cia su sass galetu buti funkcija transiciojos*/
+	transition: background 1s, color 1s;
+	transition-delay: 0.3s;
+	transition-property: background color;
+	transition-timing-function: ease-in-out;
+	transition-duration: 1s;
 }
-/* .card >* { */
-/* 	border: 1px dotted green; */
-/* } */
+
+/*card klases divo viduj h1 ir autorius  */
 #text {
+	/* 	width: 80%; */
+	text-align: center;
 	margin-bottom: 3em;
 	display: flex;
 	flex-flow: column;
-	/* 	background:green; */
 	align-items: flex-end;
 }
-#text h1 {
-	margin: 0 1em;
-	margin-bottom: 1em;
-	text-align: center;
+
+#spanas {
+	font-size: 1.2em;
 }
 
 .autorius {
@@ -53,27 +54,35 @@ div {
 }
 
 .SocMyg {
+	width: 100%;
 	display: flex;
-	align-content: space-between;
-	/* 	border: 1px dotted orange; */
+	/* 	align-content: space-between; */
 }
+
 .SocMyg > * {
 	display: flex;
 }
+
+/* mygtuko bendri nustatymai*/
+/* mygtuko konteineris*/
+.mygalas {
+	margin-left: auto;
+}
+
+/* mygtukas*/
 .myg {
-	padding: 10px;
-	border-radius: 3px;
-	border: 1px solid black;
+	padding: 15px;
+	border-radius: 2px;
+	border: none;
 	cursor: pointer;
 	display: block;
 	text-decoration: none;
 	color: white;
 	margin-right: 4px;
-}
-
-.mygalas {
-	margin-left: auto;
-}
-#spanas {
-	font-size: 1.2em;
+	/* cia su sass galetu buti funkcija transiciojos*/
+	transition: background 1s, color 1s;
+	transition-delay: 0.3s;
+	transition-property: background color;
+	transition-timing-function: ease-in-out;
+	transition-duration: 1s;
 }

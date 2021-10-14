@@ -6,9 +6,9 @@ const eleme = <FontAwesomeIcon icon={faQuoteLeft} />
 const Komentaras = ({ cita, auto }) => {
 	return (
 		<div id="text">
-			<h1>
+			<h2>
 				<span id="spanas">{eleme}</span> {cita}
-			</h1>
+			</h2>
 			<MiniAutorius auto={auto} />
 		</div>
 	)
