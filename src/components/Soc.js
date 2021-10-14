@@ -7,7 +7,7 @@ const Soc = ({ spalva }) => {
 	const hrefas2 = 'https://profilaktika1985.github.io/paprastasHtml/'
 
 	return (
-		<div>
+		<div className="socMarginas">
 			<SocLinkas
 				id="tweet-quote"
 				cssClass="myg"

@@ -61,28 +61,35 @@ body {
 
 .SocMyg > * {
 	display: flex;
+	flex-direction: row;
 }
 
 /* mygtuko bendri nustatymai*/
 /* mygtuko konteineris*/
-.mygalas {
-	margin-left: auto;
-}
 
 /* mygtukas*/
 .myg {
 	padding: 15px;
 	border-radius: 2px;
+	margin-right: 4px;
 	border: none;
 	cursor: pointer;
 	display: block;
 	text-decoration: none;
 	color: white;
-	margin-right: 4px;
 	/* cia su sass galetu buti funkcija transiciojos*/
 	transition: background 1s, color 1s;
 	transition-delay: 0.3s;
 	transition-property: background color;
 	transition-timing-function: ease-in-out;
 	transition-duration: 1s;
+}
+
+.myg:hover {
+	opacity: 0.9;
+}
+
+.mygalas {
+	margin-left: auto;
+	margin-right: -4px;
 }

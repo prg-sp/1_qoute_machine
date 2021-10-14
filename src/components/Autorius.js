@@ -1,7 +1,7 @@
 const Autorius = ({ cssClass }) => {
 	return (
 		<div className={cssClass}>
-			<p>by Hezag</p>
+			<p>by Profilaktika based on Hezag example from FreeCodeCamp</p>
 		</div>
 	)
 }
