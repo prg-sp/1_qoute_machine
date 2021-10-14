@@ -17,9 +17,6 @@ const spalvos = [
 	'#73A857',
 ]
 
-const skai = spalvos.length
-const randomNumber = Math.floor(Math.random() * skai)
-
 const citatos = [
 	{
 		id: 0,
@@ -40,9 +37,21 @@ const citatos = [
 	},
 ]
 
+//spalvu kiekis
+const colorAmout = spalvos.length
+//citatu kiekis
+const quoteAmout = citatos.length
+//sugeneruoja skaiciu atsitiktini
+const randNumGenerator = (x) => {
+	return Math.floor(Math.random() * x)
+}
+
+const randomQuoteNum = randNumGenerator(quoteAmout)
+const randomColorNum = randNumGenerator(colorAmout)
+
 const Kortele = ({ cssClass }) => {
-	const [skaicius, setSkaicius] = useState(0)
-	const [spalvaSk, setSpalvaSk] = useState(randomNumber)
+	const [skaicius, setSkaicius] = useState(randomQuoteNum)
+	const [spalvaSk, setSpalvaSk] = useState(randomColorNum)
 
 	const citata = citatos[skaicius].tekstas
 	const autorius = citatos[skaicius].autorius
@@ -60,17 +69,20 @@ const Kortele = ({ cssClass }) => {
 
 	//return random number
 	const raNum = () => {
-		let skaa = Math.floor(Math.random() * skai)
+		let skaa = Math.floor(Math.random() * colorAmout)
 		console.log(skaa)
 		if (skaa !== spalvaSk) {
 			console.log('nesikartoja')
 			return skaa
 		} else {
 			console.log('kartojasi')
-			return skaa + Math.floor(Math.random() * skai)
+			skaa = Math.floor(Math.random() * colorAmout)
+			return skaa
 		}
 	}
-	console.log('skai: ' + raNum())
+
+	//ziuriu ar tikrai nesikartoja skaicius
+	console.log('colorAmout: ' + raNum())
 
 	return (
 		<div style={{ color: spalva }} id="quote-box" className={cssClass}>

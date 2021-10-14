@@ -4,6 +4,8 @@ import { faCoffee, faQuoteLeft } from '@fortawesome/free-solid-svg-icons'
 
 const Soc = ({ spalva }) => {
 	const hrefas = 'https://twitter.com/intent/tweet'
+	const hrefas2 = 'https://profilaktika1985.github.io/paprastasHtml/'
+
 	return (
 		<div>
 			<SocLinkas
@@ -18,7 +20,7 @@ const Soc = ({ spalva }) => {
 				kur="telegramas"
 				icon={faQuoteLeft}
 				spalva={spalva}
-				hrefas="./"
+				hrefas={hrefas2}
 			/>
 		</div>
 	)
