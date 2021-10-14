@@ -63,26 +63,44 @@ const Kortele = ({ cssClass }) => {
 
 	//after a click of a button changes quote and color of everything
 	const kitasKvota = () => {
-		skaicius < citatos.length - 1 ? setSkaicius(skaicius + 1) : setSkaicius(0)
-		setSpalvaSk(raNum())
+		//cia kad iseiles eitu citatos buvo kodas
+		//skaicius < citatos.length - 1 ? setSkaicius(skaicius + 1) : setSkaicius(0)
+		quoteRandom()
+		raNum()
 	}
 
-	//return random number
+	//return random number for quotes
+	const quoteRandom = () => {
+		let ska3 = randNumGenerator(quoteAmout)
+
+		console.log('dabar citata yra nr: ' + skaicius)
+
+		if (skaicius !== ska3) {
+			console.log('citatA neskirtaoja: ' + ska3)
+			setSkaicius(ska3)
+		} else {
+			console.log('citatA kartojasi: isnaujo... ')
+			quoteRandom()
+		}
+	}
+
+	//return random number for colors
 	const raNum = () => {
 		let skaa = Math.floor(Math.random() * colorAmout)
-		console.log(skaa)
-		if (skaa !== spalvaSk) {
-			console.log('nesikartoja')
-			return skaa
+
+		console.log('dabar spalvos skaicius yra: ' + spalvaSk)
+
+		if (spalvaSk !== skaa) {
+			console.log('spalva nesikartoja: ' + skaa)
+			return setSpalvaSk(skaa)
 		} else {
-			console.log('kartojasi')
-			skaa = Math.floor(Math.random() * colorAmout)
-			return skaa
+			console.log('spalva kartojasi. ISNUAUJO..')
+			raNum()
 		}
 	}
 
 	//ziuriu ar tikrai nesikartoja skaicius
-	console.log('colorAmout: ' + raNum())
+	//console.log('colorAmout: ' + raNum())
 
 	return (
 		<div style={{ color: spalva }} id="quote-box" className={cssClass}>
