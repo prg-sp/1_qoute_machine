@@ -7,10 +7,10 @@ const Myg = ({ cssCla, func, spalva }) => {
 				className="myg"
 				onClick={func}
 			>
-				Mygalas
+				Next
 			</button>
 		</div>
-	)
-}
+	);
+};
 
-export default Myg
+export default Myg;
