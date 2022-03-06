@@ -1,9 +1,9 @@
 const Autorius = ({ cssClass }) => {
 	return (
 		<div className={cssClass}>
-			<p>by Profilaktika based on Hezag example from FreeCodeCamp</p>
+			<p>made by prg_sp based on Hezag example from FreeCodeCamp</p>
 		</div>
-	)
-}
+	);
+};
 
-export default Autorius
+export default Autorius;

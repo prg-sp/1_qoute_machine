@@ -1,29 +1,22 @@
-import SocLinkas from './SocLinkas'
+import SocLinkas from './SocLinkas';
 //import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee, faQuoteLeft } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const Soc = ({ spalva }) => {
-	const hrefas = 'https://twitter.com/intent/tweet'
-	const hrefas2 = 'https://profilaktika1985.github.io/paprastasHtml/'
+	// const hrefas = 'https://github.com/prg-sp';
+	const hrefas2 = 'mailto:wdev.prg.sp@gmail.com';
 
 	return (
 		<div>
 			<SocLinkas
-				id="tweet-quote"
-				cssClass="myg"
-				icon={faCoffee}
-				spalva={spalva}
-				hrefas={hrefas}
-			/>
-			<SocLinkas
 				cssClass="myg"
 				kur="telegramas"
-				icon={faQuoteLeft}
+				icon={faEnvelope}
 				spalva={spalva}
 				hrefas={hrefas2}
 			/>
 		</div>
-	)
-}
+	);
+};
 
-export default Soc
+export default Soc;
