@@ -1,9 +1,9 @@
-const Autorius  = ({cssClass}) => {
+const Autorius = ({ cssClass }) => {
 	return (
 		<div className={cssClass}>
-			<p>by hezag</p>
+			<p>made by prg_sp based on Hezag example from FreeCodeCamp</p>
 		</div>
-		)
-}
+	);
+};
 
 export default Autorius;

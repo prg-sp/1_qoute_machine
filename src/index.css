@@ -1,51 +1,52 @@
 body {
-	  margin: 0;
+	margin: 0;
 	font-family: 'Raleway', sans-serif;
-/*   background: #73a857; */
-/*   background: #2c3e50; */
-/*   background: #77b1a9; */
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-/*   transition-delay: 1s; */
-}
-body, div{
-/* transition: background 1s, color 1s; */
-	transition-delay: .3s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+
+	/* cia su sass galetu buti funkcija transiciojos*/
+	transition: background 1s, color 1s;
+	transition-delay: 0.3s;
 	transition-property: background color;
 	transition-timing-function: ease-in-out;
 	transition-duration: 1s;
-
 }
 
-.card{
-/* 	color: white; */
-	padding:2em;
-	background: white;;
-	border: 2px solid white;
-	min-width:300px;
+/* korteles konteineris su tekstu mygtuku ir socialiniais tinklais*/
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 3em;
+	background: white;
+	/* 	border: 2px solid white; */
+	min-width: 300px;
+	max-width: 500px;
 	width: 42vw;
-	min-height: 32vh;
-	border-radius: 5px;
+	border-radius: 3px;
+	/* cia su sass galetu buti funkcija transiciojos*/
+	transition: background 1s, color 1s;
+	transition-delay: 0.3s;
+	transition-property: background color;
+	transition-timing-function: ease-in-out;
+	transition-duration: 1s;
 }
-/* .card >* { */
-/* 	border: 1px dotted green; */
-/* } */
+
+/*card klases divo viduj h1 ir autorius  */
 #text {
-	margin-bottom: 3em;
-	display:flex;
-	flex-flow:column;
-/* 	background:green; */
-	align-items: flex-end;
-
-}
-#text h1 {
-	margin: 0 1em;
-	margin-bottom:1em;
+	/* 	width: 80%; */
 	text-align: center;
+	margin-bottom: 3em;
+	display: flex;
+	flex-flow: column;
+	align-items: flex-end;
 }
 
+#spanas {
+	font-size: 1.2em;
+}
 
 .autorius {
 	color: white;
@@ -53,28 +54,42 @@ body, div{
 }
 
 .SocMyg {
-	display:flex;
-	align-content: space-between;
-/* 	border: 1px dotted orange; */
+	width: 100%;
+	display: flex;
+	/* 	align-content: space-between; */
 }
-.SocMyg >*{
-	display:flex;
+
+.SocMyg > * {
+	display: flex;
+	flex-direction: row;
 }
+
+/* mygtuko bendri nustatymai*/
+/* mygtuko konteineris*/
+
+/* mygtukas*/
 .myg {
-	padding: 10px ;
-	border-radius: 3px;
-	border: 1px solid black;
+	padding: 15px;
+	border-radius: 2px;
+	margin-right: 4px;
+	border: none;
 	cursor: pointer;
 	display: block;
 	text-decoration: none;
 	color: white;
-	margin-right: 4px;
+	/* cia su sass galetu buti funkcija transiciojos*/
+	transition: background 1s, color 1s;
+	transition-delay: 0.3s;
+	transition-property: background color;
+	transition-timing-function: ease-in-out;
+	transition-duration: 1s;
 }
+
+.myg:hover {
+	opacity: 0.9;
+}
+
 .mygalas {
 	margin-left: auto;
+	margin-right: -4px;
 }
-#spanas {
-	font-size: 1.2em;
-
-}
-
